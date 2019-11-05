@@ -1,2 +1,1 @@
-# random-quote-generator
- Random Quote Generator
+Random Quote Generator
