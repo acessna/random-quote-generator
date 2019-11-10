@@ -10,7 +10,16 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+var quotes = [
+  {quote: '“Happiness lies in virtuous activity, and perfect happiness lies in the best activity, which is contemplative”', author
+        : 'Aristotle', work: 'The Nicomachean Ethics'},
+  {quote: '“We are too weak to discover the truth by reason alone”', author: 'St. Augustine', work: 'Confessions'},
+  {quote: '“The greater the difficulty, the more glory in surmounting it”', author: 'Epicurus'},
+  {quote: '“One cannot step twice in the same river.”', author: 'Heraclitus'},
+  {quote: '"The highest and most beautiful things in life are not to be heard about, nor read about, nor seen but, if one will, are to be lived."',
+    author: 'Soren Kierkegaard'}
 
+]
 
 
 /***
