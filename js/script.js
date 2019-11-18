@@ -11,13 +11,13 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 var quotes = [
-  {quote: '“Happiness lies in virtuous activity, and perfect happiness lies in the best activity, which is contemplative”', author
-        : 'Aristotle', work: 'The Nicomachean Ethics'},
-  {quote: '“We are too weak to discover the truth by reason alone”', author: 'St. Augustine', work: 'Confessions', year: '397 AD'},
-  {quote: '“The greater the difficulty, the more glory in surmounting it”', author: 'Epicurus'},
-  {quote: '“One cannot step twice in the same river.”', author: 'Heraclitus'},
+  {quote: '“Happiness lies in virtuous activity, and perfect happiness lies in the best activity, which is contemplative”', source
+        : 'Aristotle', citation: 'The Nicomachean Ethics'},
+  {quote: '“We are too weak to discover the truth by reason alone”', source: 'St. Augustine', citation: 'Confessions', year: '397 AD'},
+  {quote: '“The greater the difficulty, the more glory in surmounting it.”', source: 'Epicurus'},
+  {quote: '“One cannot step twice in the same river.”', source: 'Heraclitus'},
   {quote: '"The highest and most beautiful things in life are not to be heard about, nor read about, nor seen but, if one will, are to be lived."',
-    author: 'Soren Kierkegaard'}
+    source: 'Soren Kierkegaard'}
 
 ]
 
@@ -35,7 +35,21 @@ console.log(getRandomQuote());
  * `printQuote` function
 ***/
 
+function printQuote(){
+var randQuote = getRandomQuote();
+var html = ' ';
 
+html += '<p class="quote">' + randQuote.quote + '</p>';
+html += '<p class = "source">' + randQuote.source;
+if (randQuote.citation === true){
+  html += '<span class = "citation">' + randQuote.citation + '</span>';
+} if (randQuote.year === true){
+  html += 'span class = "year">' + randQuote.year + '</span>'; 
+}
+html += '</p>';
+console.log(html);
+
+}
 
 /***
  * click event listener for the print quote button
