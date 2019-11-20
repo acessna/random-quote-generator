@@ -7,9 +7,7 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-***/
+// The array below stores all the quotes for the random quote generator
 var quotes = [
   {quote: 'Happiness lies in virtuous activity, and perfect happiness lies in the best activity, which is contemplative', source
         : 'Aristotle', citation: 'The Nicomachean Ethics'},
@@ -22,18 +20,13 @@ var quotes = [
 ]
 
 
-/***
- * `getRandomQuote` function
-***/
-//This functions receives a random object from the quotes array of objects
+
+//The getRandomQuote function receives a random object from the quotes array of objects
 function getRandomQuote(){
 return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-console.log(getRandomQuote());
-/***
- * `printQuote` function
-***/
+//The printQuote function below prints the randomQuote from the getRandomQuote function onto the webpage
 
 function printQuote(){
 var randQuote = getRandomQuote();
@@ -51,9 +44,5 @@ html += '</p>';
 document.getElementById("quote-box").innerHTML = html;
 }
 
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE OF CODE BELOW!!
-***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
