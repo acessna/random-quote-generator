@@ -3,10 +3,6 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// For assistance: 
-  // Check the "Project Resources" section of the project instructions
-  // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
-
 // The array below stores all the quotes for the random quote generator
 var quotes = [
   {quote: 'Happiness lies in virtuous activity, and perfect happiness lies in the best activity, which is contemplative', source
@@ -18,8 +14,6 @@ var quotes = [
     source: 'Soren Kierkegaard'}
 
 ]
-
-
 
 //The getRandomQuote function receives a random object from the quotes array of objects
 function getRandomQuote(){
